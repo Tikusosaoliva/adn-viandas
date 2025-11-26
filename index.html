@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADN Viandas - Comida Saludable</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>ADN Viandas</h1>
+        <p>Alimentación saludable y natural</p>
+    </header>
+
+    <!-- Menú de navegación para moverse por la página -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <div class="container">
+            
+            <!-- Sección de bienvenida -->
+            <section id="inicio">
+                <h2>¡Bienvenidos a ADN Viandas!</h2>
+                <p>Somos una empresa dedicada a ofrecer viandas saludables, nutritivas y deliciosas. Nuestro compromiso es brindar alimentación de calidad que se adapte a tu estilo de vida activo y saludable.</p>
+                <p>Utilizamos ingredientes frescos y naturales, preparados con amor y dedicación para cuidar tu bienestar y el de tu familia.</p>
+            </section>
+    
+            <!-- Sección que muestra los servicios que ofrecemos -->
+            <section id="servicios">
+                <h2>Nuestros Servicios</h2>
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <h3>Viandas Semanales</h3>
+                        <p>Planifica tu semana con nuestras viandas preparadas. Menús variados y equilibrados para cada día.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <h3>Dietas Especiales</h3>
+                        <p>Viandas adaptadas a tus necesidades: vegetarianas, veganas, sin gluten, keto y más.</p>
+                    </div>
+                    <div class="servicio-card">
+                        <h3>Delivery</h3>
+                        <p>Entregamos tu pedido en la comodidad de tu hogar u oficina. Servicio rápido y confiable.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Tabla con los precios de nuestros planes -->
+            <section id="menu">
+                <h2>Menú y Precios</h2>
+                <p>Nuestras viandas incluyen plato principal, guarnición y postre saludable.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Descripción</th>
+                            <th>Precio por vianda</th>
+                            <th>Pack semanal (5 viandas)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plan Clásico</td>
+                            <td>Carnes, pollo, pescado con guarniciones variadas</td>
+                            <td>$1.400</td>
+                            <td>$6.500</td>
+                        </tr>
+                        <tr>
+                            <td>Plan Vegetariano</td>
+                            <td>Proteínas vegetales, legumbres y cereales</td>
+                            <td>$1.200</td>
+                            <td>$5.500</td>
+                        </tr>
+                        <tr>
+                            <td>Plan Fitness</td>
+                            <td>Alto contenido proteico, bajo en carbohidratos</td>
+                            <td>$1.500</td>
+                            <td>$6.900</td>
+                        </tr>
+                        <tr>
+                            <td>Plan Familiar</td>
+                            <td>Porciones familiares para 2-3 personas</td>
+                            <td>$2.500</td>
+                            <td>$11.500</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+    
+            <!-- Formulario para que los clientes hagan pedidos -->
+            <section id="contacto">
+                <h2>Contacto y Pedidos</h2>
+                <p>Realizá tu pedido completando el siguiente formulario:</p>
+                
+                <div class="form-container">
+                    <form>
+                        <!-- Datos personales del cliente -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="direccion">Dirección de entrega:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+    
+                        <!-- Opciones del pedido -->
+                        <div class="form-group">
+                            <label for="plan">Seleccionar plan:</label>
+                            <select id="plan" name="plan" required>
+                                <option value="">Elegí tu plan</option>
+                                <option value="clasico">Plan Clásico</option>
+                                <option value="vegetariano">Plan Vegetariano</option>
+                                <option value="fitness">Plan Fitness</option>
+                                <option value="familiar">Plan Familiar</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="cantidad">Cantidad de viandas por semana:</label>
+                            <select id="cantidad" name="cantidad" required>
+                                <option value="">Seleccionar cantidad</option>
+                                <option value="1">1 vianda</option>
+                                <option value="2">2 viandas</option>
+                                <option value="3">3 viandas</option>
+                                <option value="4">4 viandas</option>
+                                <option value="5">5 viandas (pack semanal)</option>
+                            </select>
+                        </div>
+    
+                        <!-- Campo opcional para comentarios -->
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios adicionales:</label>
+                            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Alergias alimentarias, preferencias especiales, horarios de entrega, etc."></textarea>
+                        </div>
+    
+                        <!-- Botón para enviar el formulario -->
+                        <button type="submit">Enviar Pedido</button>
+                    </form>
+                </div>
+
+                <!-- NUEVO TP 2 - JS -->
+                <section id="pedidos">
+                    <h2>Pedidos cargados</h2>
+
+                    <div class="form-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Plan</th>
+                                    <th>Cantidad</th>
+                                    <th>Teléfono</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaPedidos"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Información de contacto adicional -->
+                <div class="info-contacto">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5493492123456" target="_blank">+54 9 3492 123456</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:pedidos@adnviandas.com">pedidos@adnviandas.com</a></p>
+                    <p><strong>Horarios:</strong> Lunes a Viernes de 9:00 a 18:00hs</p>
+                    <p><strong>Zona de entrega:</strong> Rafaela y alrededores</p>
+                </div>
+          </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>ADN Viandas - Seguinos en nuestras redes sociales</p>
+    </footer>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>

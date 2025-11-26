@@ -1,0 +1,234 @@
+/* CSS PARA ADN VIANDAS */
+
+/* Reset básico - borra los espacios por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+/* Para que el scroll sea suave cuando hago clic en los enlaces */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: sticky; /* Se queda fijo arriba cuando hago scroll */
+    top: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background: #b71c1c;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none; /* Sin puntitos de lista */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: background 0.3s; /* Transición suave para el hover */
+}
+
+nav a:hover {
+    background: #8f0000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 2rem;
+}
+
+section {
+    background: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra suave */
+    border-left: 4px solid #d32f2f; /* Línea roja decorativa */
+}
+
+h2 {
+    color: #d32f2f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 0.5rem;
+}
+
+/* Flexbox para las tarjetas de servicios */
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap; /* Si no entran, se van abajo */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.servicio-card {
+    background: #ffebee; /* Rosa clarito */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s; /* Para el efecto hover */
+    flex: 1; /* Todas las tarjetas ocupan el mismo espacio */
+    min-width: 280px; /* No más chicas que esto */
+}
+
+.servicio-card:hover {
+    border-color: #d32f2f;
+    transform: translateY(-5px); /* Se levanta un poquito */
+}
+
+.servicio-card h3 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Para que no haya espacios entre bordes */
+    margin-top: 1.5rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #d32f2f;
+    color: white;
+}
+
+tr:hover {
+    background: #ffebee; /* Filas se colorean al pasar el mouse */
+}
+
+.form-container {
+    background: #ffebee;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* Todos los campos del formulario tienen el mismo estilo */
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 0.3rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none; /* Quito el borde azul por defecto */
+    border-color: #d32f2f;
+}
+
+button {
+    background: #d32f2f;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #b71c1c; /* Se oscurece al hacer hover */
+}
+
+.info-contacto {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #fff5f5;
+    border-radius: 0.5rem;
+}
+
+.info-contacto h3 {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+
+.info-contacto a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.info-contacto a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #8f0000;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive - para que se vea bien en celulares */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem; /* Más chico en celular */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Menú vertical en celular */
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.3rem 0;
+    }
+    
+    .servicios-grid {
+        flex-direction: column; /* Una sola columna en celular */
+    }
+}
